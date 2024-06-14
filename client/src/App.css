@@ -1,0 +1,168 @@
+.box1 {
+  background-color: #ED5969;
+  width: 300px;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: azure;
+  margin: 0px auto;
+  border-radius: 5px;
+  transition: filter 0.2s;
+  animation: slideUp 2s forwards;
+}
+@keyframes slideUp {
+from {
+    transform: translateY(100%);
+}
+to {
+    transform: translateY(0%);
+}
+}
+.box1:hover {
+filter: drop-shadow(1px 0px 20px  rgb(241, 120, 120)) ;
+}
+.box1 :hover{
+filter: drop-shadow(1px 0px 5px  rgb(255, 254, 254)) ;
+}
+
+.box2 {
+  margin: 0px ;
+}
+
+.box3 li {
+  position: relative;
+  left: -60px;
+  width: 320px;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2px 0;
+  background-color: #f5727f;
+  padding: 0 10px; 
+  border-radius: 5px;
+}
+
+
+.box3 li span {
+  margin: 10px 0px 10px 10px; 
+ 
+}
+.box3 li span input {
+background-color:#f5727f;
+border: 0px;
+}
+
+.box6 {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.box4 {
+  box-sizing: border-box ;
+  width: 200px;
+  height: 40px;
+  border-color: #ffffff;
+  margin-right: 1px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 2px;
+  border: #f5727f;
+  color: firebrick ;
+  
+}
+input:focus {
+outline:  #ED5969; 
+border: #f5727f;
+filter: drop-shadow(none);
+}
+button {
+  box-sizing: border-box ;
+  width: 90px;
+  height: 40px;
+  background-color: #ED5969; 
+  border: 1px solid rgb(255, 255, 255); 
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+button:hover {
+background-color:  #f5727f; 
+
+}
+.box5{
+  display: flex;
+}
+.box5 input{
+cursor: pointer;
+}
+.box5 span:hover {
+filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.75));
+}
+h3 {
+  margin-bottom: 2px;
+}
+
+.box8{
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 12px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  margin: 0px 5px;
+
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch label {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 22px;
+}
+
+.switch label:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+.switch input:checked + label {
+  background-color: #2196F3;
+}
+
+.switch input:focus + label {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+.switch input:checked + label:before {
+  -webkit-transform: translateX(8px);
+  -ms-transform: translateX(8px);
+  transform: translateX(8px);
+}
